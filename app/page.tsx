@@ -258,7 +258,7 @@ export default function Home() {
                     script.src = "https://checkout.razorpay.com/v1/checkout.js";
                     script.onload = () => {
                       const options = {
-                        key: "rzp_test_SxWwgNfb8GslVA", // Apna Razorpay Test Key yahan paste kar dena
+                        key: "rzp_live_SxdvyK271DgC5O", // Apna Razorpay Live Key yahan paste kar dena
                         amount: 14900, // ₹149.00 in paise
                         currency: "INR",
                         name: "Med With Fun Academy",

@@ -351,7 +351,7 @@ export default function Home() {
           <span className="text-xl text-green-400">🩺</span>
         </div>
         <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-all mb-1">
-          Munkasif
+          Munkasif Khan
         </h3>
         <p className="text-green-400/80 font-medium text-xs mb-3">
           Founder & Medical Expert

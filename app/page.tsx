@@ -15,6 +15,7 @@ export default function Home() {
           <a href="#notes" className="hover:text-green-400 transition">MedNotes</a>
           <a href="#ebooks" className="hover:text-green-400 transition">E-Books Store</a>
           <a href="#blog" className="hover:text-green-400 transition">Blog</a>
+          <a href="/team" className="hover:text-green-400 transition">Meet the Team</a>
           <a href="#contact" className="hover:text-green-400 transition">Contact</a>
         </div>
       </nav>

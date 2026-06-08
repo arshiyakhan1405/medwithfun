@@ -12,7 +12,7 @@ export default function Home() {
         <div className="text-xl font-black tracking-wider text-green-400 uppercase flex items-center gap-2">
           Med With Fun 🩺
         </div>
-
+        
         {/* DESKTOP NAVIGATION (Laptop ke liye saaf-sutra) */}
         <div className="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-gray-300">
           <a href="#home" className="hover:text-green-400 transition">Home</a>

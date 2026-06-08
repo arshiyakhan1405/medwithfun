@@ -44,6 +44,7 @@ export default function Home() {
             <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">Home</a>
             <a href="#facts" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">MedFacts</a>
             <a href="#Ebooks" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">E-Books Store</a>
+            <a href="#blog" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-white/5">Blog</a>
             <a href="#team" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">Meet the Team</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3">Contact</a>
           </div>

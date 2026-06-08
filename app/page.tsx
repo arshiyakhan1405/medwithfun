@@ -1,23 +1,50 @@
-"use client";
-
 export default function Home() {
+  // Mobile menu open/close karne ke liye React state
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <main className="w-full min-h-screen bg-black text-white font-sans scroll-smooth">
       
-      {/* PROFESSIONAL HEADER / NAVIGATION */}
-      <nav className="fixed top-0 w-full z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-black/60 backdrop-blur-md border-b border-white/10">
-        <div className="text-xl font-black tracking-wider text-green-400 uppercase">
+      {/* PROFESSIONAL FIXED HEADER */}
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 md:px-12 py-4 flex items-center justify-between">
+        <div className="text-xl font-black tracking-wider text-green-400 uppercase flex items-center gap-2">
           Med With Fun 🩺
         </div>
-       {/* MOBILE NAVIGATION MENU */}
-        <div className="md:hidden bg-black/95 border-t border-white/10 px-6 py-4 flex flex-col gap-4 font-medium text-base">
-          <a href="#home" className="hover:text-green-400 transition py-2 border-b border-white/5">Home</a>
-          <a href="#facts" className="hover:text-green-400 transition py-2 border-b border-white/5">MedFacts</a>
-          <a href="#Ebooks" className="hover:text-green-400 transition py-2 border-b border-white/5">E-Books Store</a>
-          <a href="#blog" className="hover:text-greeb-400 transition py-2 border-b border-white/5">Blog</a>
-          <a href="#team" className="hover:text-green-400 transition py-2 border-b border-white/5">Meet the Team</a>
-          <a href="#contact" className="hover:text-green-400 transition py-2">Contact</a>
+
+        {/* DESKTOP NAVIGATION (Laptop ke liye saaf-sutra) */}
+        <div className="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-gray-300">
+          <a href="#home" className="hover:text-green-400 transition">Home</a>
+          <a href="#facts" className="hover:text-green-400 transition">MedFacts</a>
+          <a href="#Ebooks" className="hover:text-green-400 transition">E-Books Store</a>
+          <a href="#team" className="hover:text-green-400 transition">Meet the Team</a>
+          <a href="#contact" className="hover:text-green-400 transition">Contact</a>
         </div>
+
+        {/* MOBILE HAMBURGER BUTTON (☰) */}
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-white focus:outline-none p-2 z-50"
+          aria-label="Toggle Menu"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {isMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+
+        {/* OVERLAY & FLOATING MOBILE MENU (Sleek Phone Menu Design) */}
+        {isMenuOpen && (
+          <div className="md:hidden fixed inset-0 top-[60px] bg-black/95 backdrop-blur-lg flex flex-col items-center justify-start pt-12 gap-6 font-semibold text-lg animate-fade-in z-40 h-screen">
+            <a href="#home" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">Home</a>
+            <a href="#facts" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">MedFacts</a>
+            <a href="#Ebooks" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">E-Books Store</a>
+            <a href="#team" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3 border-b border-white/5">Meet the Team</a>
+            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-gray-300 hover:text-green-400 transition w-full text-center py-3">Contact</a>
+          </div>
+        )}
       </nav>
 
       {/* SECTION 1: CLEAN HERO AREA */}

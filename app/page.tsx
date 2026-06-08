@@ -18,7 +18,7 @@ export default function Home() {
           <a href="#home" className="hover:text-green-400 transition">Home</a>
           <a href="#facts" className="hover:text-green-400 transition">MedFacts</a>
           <a href="#Ebooks" className="hover:text-green-400 transition">E-Books Store</a>
-          <a ref="#blog" className="hover:text-green-400 transition">Blog</a>
+          <a href="#blog" className="hover:text-green-400 transition">Blog</a>
           <a href="#team" className="hover:text-green-400 transition">Meet the Team</a>
           <a href="#contact" className="hover:text-green-400 transition">Contact</a>
         </div>

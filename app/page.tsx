@@ -12,7 +12,6 @@ export default function Home() {
         <div className="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-gray-300">
           <a href="#home" className="hover:text-green-400 transition">Home</a>
           <a href="#facts" className="hover:text-green-400 transition">MedFacts</a>
-          <a href="#notes" className="hover:text-green-400 transition">MedNotes</a>
           <a href="#ebooks" className="hover:text-green-400 transition">E-Books Store</a>
           <a href="#blog" className="hover:text-green-400 transition">Blog</a>
           <a href="/team" className="hover:text-green-400 transition">Meet the Team</a>
@@ -41,10 +40,10 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <a 
-              href="#notes" 
-              className="bg-green-500 hover:bg-green-600 text-black font-extrabold px-6 py-3 rounded-xl text-md transition transform hover:scale-105"
+              href="#ebooks" 
+              className="bg-green-500 hover:bg-green-600 text-black font-extrabold px-6 py-3 rounded-xl text-md transition inline-block text-center"
             >
-              Explore MedNotes 📚
+              Explore E-Books 📚
             </a>
             <a 
               href="#facts" 
@@ -124,55 +123,6 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* SECTION 3: MEDNOTES CATEGORIES */}
-      <section id="notes" className="py-24 px-6 max-w-6xl mx-auto border-t border-white/10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-green-400 mb-4">Browse MedNotes Portal</h2>
-          <p className="text-gray-400 text-lg">Select your MBBS year to access premium hand-written notes.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-neutral-900/60 p-8 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all flex flex-col justify-between group">
-            <div>
-              <span className="text-xs font-bold text-green-400 tracking-widest uppercase">MBBS Phase 1</span>
-              <h3 className="text-2xl font-bold mt-2 mb-4">1st Year Notes</h3>
-              <ul className="text-gray-400 space-y-2 text-sm mb-6">
-                <li>• Anatomy (Gross & Histology)</li>
-                <li>• Physiology (Systemic)</li>
-                <li>• Biochemistry (Pathways)</li>
-              </ul>
-            </div>
-            <button className="w-full bg-white/10 group-hover:bg-green-500 group-hover:text-black font-bold py-3 rounded-xl transition-all">Open Notes 📂</button>
-          </div>
-
-          <div className="bg-neutral-900/60 p-8 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all flex flex-col justify-between group">
-            <div>
-              <span className="text-xs font-bold text-green-400 tracking-widest uppercase">MBBS Phase 2</span>
-              <h3 className="text-2xl font-bold mt-2 mb-4">2nd Year Notes</h3>
-              <ul className="text-gray-400 space-y-2 text-sm mb-6">
-                <li>• Pathology (General & Systemic)</li>
-                <li>• Microbiology (Bacteriology)</li>
-                <li>• Pharmacology (Drugs classification)</li>
-              </ul>
-            </div>
-            <button className="w-full bg-white/10 group-hover:bg-green-500 group-hover:text-black font-bold py-3 rounded-xl transition-all">Open Notes 📂</button>
-          </div>
-
-          <div className="bg-neutral-900/60 p-8 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all flex flex-col justify-between group">
-            <div>
-              <span className="text-xs font-bold text-green-400 tracking-widest uppercase">MBBS Phase 3</span>
-              <h3 className="text-2xl font-bold mt-2 mb-4">Clinical Notes</h3>
-              <ul className="text-gray-400 space-y-2 text-sm mb-6">
-                <li>• Medicine & Surgery Basics</li>
-                <li>• Pediatrics & OBG</li>
-                <li>• High-Yield Exam Mnemonics</li>
-              </ul>
-            </div>
-            <button className="w-full bg-white/10 group-hover:bg-green-500 group-hover:text-black font-bold py-3 rounded-xl transition-all">Open Notes 📂</button>
-          </div>
         </div>
       </section>
 

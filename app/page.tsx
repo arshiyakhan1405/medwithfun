@@ -9,13 +9,13 @@ export default function Home() {
         <div className="text-xl font-black tracking-wider text-green-400 uppercase">
           Med With Fun 🩺
         </div>
-        <div className="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-gray-300">
-          <a href="#home" className="hover:text-green-400 transition">Home</a>
-          <a href="#facts" className="hover:text-green-400 transition">MedFacts</a>
-          <a href="#ebooks" className="hover:text-green-400 transition">E-Books Store</a>
-          <a href="#blog" className="hover:text-green-400 transition">Blog</a>
-          <a href="/team" className="hover:text-green-400 transition">Meet the Team</a>
-          <a href="#contact" className="hover:text-green-400 transition">Contact</a>
+       {/* MOBILE NAVIGATION MENU */}
+        <div className="md:hidden bg-black/95 border-t border-white/10 px-6 py-4 flex flex-col gap-4 font-medium text-base">
+          <a href="#home" className="hover:text-green-400 transition py-2 border-b border-white/5">Home</a>
+          <a href="#facts" className="hover:text-green-400 transition py-2 border-b border-white/5">MedFacts</a>
+          <a href="#Ebooks" className="hover:text-green-400 transition py-2 border-b border-white/5">E-Books Store</a>
+          <a href="#team" className="hover:text-green-400 transition py-2 border-b border-white/5">Meet the Team</a>
+          <a href="#contact" className="hover:text-green-400 transition py-2">Contact</a>
         </div>
       </nav>
 

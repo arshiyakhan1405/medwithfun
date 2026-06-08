@@ -1,3 +1,5 @@
+"use client"
+import React from 'react';
 export default function Home() {
   // Mobile menu open/close karne ke liye React state
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

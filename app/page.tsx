@@ -14,6 +14,7 @@ export default function Home() {
           <a href="#home" className="hover:text-green-400 transition py-2 border-b border-white/5">Home</a>
           <a href="#facts" className="hover:text-green-400 transition py-2 border-b border-white/5">MedFacts</a>
           <a href="#Ebooks" className="hover:text-green-400 transition py-2 border-b border-white/5">E-Books Store</a>
+          <a href="#blog" className="hover:text-greeb-400 transition py-2 border-b border-white/5">Blog</a>
           <a href="#team" className="hover:text-green-400 transition py-2 border-b border-white/5">Meet the Team</a>
           <a href="#contact" className="hover:text-green-400 transition py-2">Contact</a>
         </div>

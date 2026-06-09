@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   title: "Med With Fun",
   description: "High-Yield Medical Notes & Digital E-Books",
   verification: {
-    google: "
-      content="Iq96erdXxOuW3pR74NeLBDQ_A-blSAbuD1pDhcmg1Yg" />",
+    google: "Iq96erdXxOuW3pR74NeLBDQ_A-blSAbuD1pDhcmg1Yg",
   },
 };
 

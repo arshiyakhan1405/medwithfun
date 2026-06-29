@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { triggerEmailAction } from "./actions";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -196,14 +197,20 @@ export default function Home() {
                     script.onload = () => {
                       const options = {
                         key: "rzp_live_SxdvyK271DgC5O",
-                        amount: 14900,
+                        amount: 14900, // ₹149.00 in paise
                         currency: "INR",
                         name: "Med With Fun Academy",
                         description: "FMGE SUCCESSS BLUEPRINT - Complete E-Book",
                         image: "/favicon.ico",
-                        handler: function (response: any) {
-                          alert("🎉 Payment Successful! Opening complete E-Book...");
+                        handler: async function (response: any) {
+                          const emailValue = (document.getElementById('rzp-email') as HTMLInputElement)?.value;
+                          if (emailValue) {
+                            await triggerEmailAction(emailValue);
+                          } else {
+                            console.error("Email input is empty. Cannot send email.");
+                          }
                           window.location.href = 'https://drive.google.com/file/d/1R6kRxP80LaHBWJX3jP_Nm6svQzTlq6Ok/view?usp=sharing';
+                          alert("🎉 Payment Successful! Opening complete E-Book...");
                         }
                       };
                       const rzp = new (window as any).Razorpay(options);

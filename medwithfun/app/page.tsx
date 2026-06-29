@@ -259,26 +259,30 @@ export default function Home() {
       </section>
 
       {/* MEET THE TEAM */}
-      <section id="team" className="py-20 bg-[#0a0a0a] border-t border-white/5">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">Meet the Team</h2>
-          <p className="text-gray-400 text-base max-w-2xl mx-auto mb-12">Behind "Med With Fun" is a unique collaboration between medical expertise and modern technology, driven by a shared vision to make medical learning simple, engaging, and accessible for everyone.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-green-500/50 transition-all group">
-              <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 group-hover:bg-green-500/20 transition-all"><span className="text-xl text-green-400">🩺</span></div>
-              <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-all mb-1">Munkasif Khan</h3>
-              <p className="text-green-400/80 font-medium text-xs mb-3">Founder & Medical Expert</p>
-              <p className="text-gray-400 leading-relaxed text-sm">A passionate medical student and FMGE aspirant who believes that medical education doesn't have to be boring. Munkasif is the brain behind all the high-yield notes, creative memory tricks, and E-books on this platform, aiming to help fellow students ace their exams with ease.</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-green-500/50 transition-all group">
-              <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 group-hover:bg-green-500/20 transition-all"><span className="text-xl text-green-400">💻</span></div>
-              <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-all mb-1">Arshiya Khan</h3>
-              <p className="text-green-400/80 font-medium text-xs mb-3">Lead Developer & Tech Architect</p>
-              <p className="text-gray-400 leading-relaxed text-sm">The tech magician who brought this vision to life. Arshiya is the developer behind the seamless design, fast performance, and secure architecture of "Med With Fun." From drafting the first line of code to ensuring a smooth user experience, Arshiya handles everything under the hood.</p>
-            </div>
+      export default function TeamPage() 
+  return (
+    <section className="py-20 bg-[#0a0a0a] border-t border-white/5 min-h-screen text-white">
+      <div className="max-w-4xl mx-auto text-center px-4">
+        <h2 className="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">Meet the Team</h2>
+        <p className="text-gray-400 text-base max-w-2xl mx-auto mb-12">Behind "Med With Fun" is a unique collaboration between medical expertise and modern technology, driven by a shared vision to make medical learning simple, engaging, and accessible for everyone.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-green-500/50 transition-all group">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 group-hover:bg-green-500/20 transition-all"><span className="text-xl text-green-400">🩺</span></div>
+            <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-all mb-1">Munkasif Khan</h3>
+            <p className="text-green-400/80 font-medium text-xs mb-3">Founder & Medical Expert</p>
+            <p className="text-gray-400 leading-relaxed text-sm">A passionate medical student and FMGE aspirant who believes that medical education doesn't have to be boring. Munkasif is the brain behind all the high-yield notes, creative memory tricks, and E-books on this platform, aiming to help fellow students ace their exams with ease.</p>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-green-500/50 transition-all group">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 group-hover:bg-green-500/20 transition-all"><span className="text-xl text-green-400">💻</span></div>
+            <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-all mb-1">Arshiya Khan</h3>
+            <p className="text-green-400/80 font-medium text-xs mb-3">Lead Developer & Tech Architect</p>
+            <p className="text-gray-400 leading-relaxed text-sm">The tech magician who brought this vision to life. Arshiya is the developer behind the seamless design, fast performance, and secure architecture of "Med With Fun." From drafting the first line of code to ensuring a smooth user experience, Arshiya handles everything under the hood.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  );
+
 
       {/* CONTACT SECTION */}
       <section id="contact" className="w-full py-20 px-6 max-w-3xl mx-auto border-t border-zinc-900">
